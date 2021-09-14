@@ -7,4 +7,11 @@ const jank = () => {
     console.log("jank end");
 };
 
-jank();
+document
+    .querySelector("img")
+    .decode()
+    .then(() => {
+        console.log("image decoded");
+
+        jank();
+    });
